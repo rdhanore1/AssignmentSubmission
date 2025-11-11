@@ -1,0 +1,26 @@
+1. 1. Creating and Renaming Files/Directories
+Create a directory named test_dir using mkdir.
+Inside test_dir, create an empty file called example.txt.
+Rename example.txt to renamed_example.txt using mv
+
+Answer:
+# 1. Create a directory named test_dir
+mkdir test_dir
+
+# 2. Verify that the directory was created
+ls
+
+# 3. Move into the directory
+cd test_dir
+
+# 4. Create an empty file called example.txt
+touch example.txt
+
+# 5. Verify that the file was created
+ls
+
+# 6. Rename example.txt to renamed_example.txt
+mv example.txt renamed_example.txt
+
+# 7. Verify that the file was renamed
+ls

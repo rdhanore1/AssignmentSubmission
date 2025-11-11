@@ -1,0 +1,14 @@
+2. Viewing File Contents
+Use cat to display the contents of /etc/passwd.
+Display only the first 5 lines of /etc/passwd using head.
+Display only the last 5 lines of /etc/passwd using tail.
+
+Answer:
+# 1. Display the entire contents of /etc/passwd
+cat /etc/passwd
+
+# 2. Display only the first 5 lines of /etc/passwd
+head -n 5 /etc/passwd
+
+# 3. Display only the last 5 lines of /etc/passwd
+tail -n 5 /etc/passwd
