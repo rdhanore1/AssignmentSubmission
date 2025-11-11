@@ -1,0 +1,20 @@
+3.Searching for Patterns
+Use grep to find all lines containing the word "root" in /etc/passwd.
+
+Answer:
+# 1. Search for lines containing the word "root" in /etc/passwd
+grep "root" /etc/passwd
+
+# 2. Count the number of lines containing the word "root"
+grep -c "root" /etc/passwd
+
+# 3. Search for lines containing the word "root" and display line numbers
+grep -n "root" /etc/passwd
+
+# 4. Search for lines containing the word "root" in a case-insensitive manner
+grep -i "root" /etc/passwd
+
+# 5. Search for lines containing the word "root" and display 2 lines of context before and after each match
+grep -C 2 "root" /etc/passwd
+
+# The final output should display all lines containing the word "root" along with the additional requested information

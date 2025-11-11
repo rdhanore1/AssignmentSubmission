@@ -1,0 +1,27 @@
+4. Zipping and Unzipping
+Compress the test_dir directory into a file named test_dir.zip using zip.
+Unzip test_dir.zip into a new directory named unzipped_dir.
+
+Answer:
+# 1. Compress the test_dir directory into a file named test_dir.zip
+zip -r test_dir.zip test_dir
+
+# 2. Verify that the zip file was created
+ls -l test_dir.zip
+
+# 3. Create a new directory named unzipped_dir
+mkdir unzipped_dir
+
+# 4. Unzip test_dir.zip into the unzipped_dir directory
+unzip test_dir.zip -d unzipped_dir
+
+# 5. Verify that the contents were unzipped correctly
+ls -l unzipped_dir/test_dir
+
+# 6. Clean up by removing the created files and directories
+rm -r test_dir unzipped_dir test_dir.zip
+
+# 7. Verify that everything has been removed
+ls -l test_dir test_dir.zip unzipped_dir || echo "All files and directories have been removed"
+
+# The final output should confirm that test_dir, test_dir.zip, and unzipped_dir have been removed

@@ -1,0 +1,25 @@
+6. Changing Permissions
+Create a file named secure.txt and change its permissions to read-only for everyone using chmod.
+
+Answer:
+# 1. Create a file named secure.txt
+touch secure.txt
+
+# 2. Change its permissions to read-only for everyone
+chmod 444 secure.txt
+
+# 3. Verify the permissions
+ls -l secure.txt
+
+# The output should show -r--r--r-- indicating read-only permissions for user, group, and others
+
+# 4. Attempt to write to the file (this should fail)
+echo "Trying to write to secure.txt" >> secure.txt || echo "Write operation failed as expected"
+
+# 5. Clean up by removing the file
+rm secure.txt
+
+# 6. Verify that the file has been removed
+ls -l secure.txt || echo "secure.txt has been removed"
+
+# The final output should confirm that secure.txt has been removed

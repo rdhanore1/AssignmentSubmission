@@ -1,0 +1,20 @@
+7. Working with Environment Variables
+Use export to set a new environment variable called MY_VAR with the value "Hello, Linux!".
+
+Answer:
+# 1. Set a new environment variable called MY_VAR with the value "Hello, Linux!"
+export MY_VAR="Hello, Linux!"
+
+# 2. Verify that the environment variable is set
+echo $MY_VAR
+
+# 3. To make the environment variable persistent across sessions, add it to ~/.bashrc
+echo 'export MY_VAR="Hello, Linux!"' >> ~/.bashrc
+
+# 4. Reload ~/.bashrc to apply the changes
+source ~/.bashrc
+
+# 5. Verify again that the environment variable is set
+echo $MY_VAR
+
+# The final output should display "Hello, Linux!" twice, confirming that MY_VAR is set correctly
